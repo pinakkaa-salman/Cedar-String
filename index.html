@@ -497,7 +497,7 @@
    <style>
       /* Section 1 - Plush Gardens */
       .section-1 {
-            padding: 80px 60px;
+            padding: 40px 60px;
             max-width: 1220px;
             margin: 0 auto;
         }
@@ -603,6 +603,7 @@
             max-width: 280px;
             aspect-ratio: 0.6;
             margin-left: 50%;
+            height: 350px;
         }
 
         /* Section 2 - Homes that keep on giving */
@@ -615,7 +616,7 @@
         h2 {
             font-size: 3.5rem;
             font-weight: 400;
-            margin-bottom: 60px;
+            /* margin-bottom: 60px; */
             color: #2d2d2d;
             line-height: 1.2;
         }
@@ -681,8 +682,8 @@
         }
 
         .item-icon {
-            width: 40px;
-            height: 40px;
+            width: 30px;
+            height: 30px;
             border: 2px solid #2d2d2d;
             border-radius: 8px;
             display: flex;
@@ -745,7 +746,7 @@
             max-width: 1220px;
             margin: 4rem auto;
             display: flex;
-            gap: 100px;
+            gap: 50px;
             align-items: center;
         }
 
@@ -871,6 +872,103 @@
         }
 
 
+
+         /* PROJECT OVERVIEW STYLES */
+.project-overview {
+  padding: 60px 16px;
+  background: #FAF3EF;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.po-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.po-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #222;
+}
+
+.po-grid {
+  display: flex;
+  /* grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); */
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.po-item {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px 18px 24px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 140px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.po-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 35px rgba(15, 23, 42, 0.09);
+}
+
+.po-text {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: #111827;
+  margin-top: 1.4rem;
+}
+
+.po-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin: 0 auto;
+  background: #f9fafb;
+}
+
+/* Mobile tweaks */
+@media (max-width: 480px) {
+  .project-overview {
+    padding: 40px 14px;
+  }
+
+  .po-title {
+    font-size: 22px;
+    margin-bottom: 24px;
+  }
+
+  .po-item {
+    padding: 16px 14px 20px;
+  }
+
+  .po-text {
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+
+
+
    </style>
 <script bis_use="true" type="text/javascript" charset="utf-8" data-bis-config="[&quot;facebook.com/&quot;,&quot;twitter.com/&quot;,&quot;youtube-nocookie.com/embed/&quot;,&quot;//vk.com/&quot;,&quot;//www.vk.com/&quot;,&quot;linkedin.com/&quot;,&quot;//www.linkedin.com/&quot;,&quot;//instagram.com/&quot;,&quot;//www.instagram.com/&quot;,&quot;//www.google.com/recaptcha/api2/&quot;,&quot;//hangouts.google.com/webchat/&quot;,&quot;//www.google.com/calendar/&quot;,&quot;//www.google.com/maps/embed&quot;,&quot;spotify.com/&quot;,&quot;soundcloud.com/&quot;,&quot;//player.vimeo.com/&quot;,&quot;//disqus.com/&quot;,&quot;//tgwidget.com/&quot;,&quot;//js.driftt.com/&quot;,&quot;friends2follow.com&quot;,&quot;/widget&quot;,&quot;login&quot;,&quot;//video.bigmir.net/&quot;,&quot;blogger.com&quot;,&quot;//smartlock.google.com/&quot;,&quot;//keep.google.com/&quot;,&quot;/web.tolstoycomments.com/&quot;,&quot;moz-extension://&quot;,&quot;chrome-extension://&quot;,&quot;/auth/&quot;,&quot;//analytics.google.com/&quot;,&quot;adclarity.com&quot;,&quot;paddle.com/checkout&quot;,&quot;hcaptcha.com&quot;,&quot;recaptcha.net&quot;,&quot;2captcha.com&quot;,&quot;accounts.google.com&quot;,&quot;www.google.com/shopping/customerreviews&quot;,&quot;buy.tinypass.com&quot;,&quot;gstatic.com&quot;,&quot;secureir.ebaystatic.com&quot;,&quot;docs.google.com&quot;,&quot;contacts.google.com&quot;,&quot;github.com&quot;,&quot;mail.google.com&quot;,&quot;chat.google.com&quot;,&quot;audio.xpleer.com&quot;,&quot;keepa.com&quot;,&quot;static.xx.fbcdn.net&quot;,&quot;sas.selleramp.com&quot;,&quot;1plus1.video&quot;,&quot;console.googletagservices.com&quot;,&quot;//lnkd.demdex.net/&quot;,&quot;//radar.cedexis.com/&quot;,&quot;//li.protechts.net/&quot;,&quot;challenges.cloudflare.com/&quot;,&quot;ogs.google.com&quot;]" src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/traffic.js"></script></head>
 
@@ -970,6 +1068,74 @@
 
 
 
+     <!-- PROJECT OVERVIEW SECTION -->
+<section class="project-overview">
+   <div class="po-container">
+     <!-- <h2 class="po-title">Project Overview</h2> -->
+     
+     <h2 class="heading text-dark text-center"> Project Overview</h2>
+ 
+     <div class="po-grid">
+       <!-- Item 1 -->
+       <div class="po-item">
+          <div class="po-icon">
+            <img src="./Icons/Overview/approval.svg" alt="" class="overview-icons">
+          </div>
+         <p class="po-text">BBMP & RERA APPROVED</p>
+       </div>
+ 
+       <!-- Item 2 -->
+       <div class="po-item">
+          <div class="po-icon">
+            <img src="./Icons/Overview/villa.svg" alt="" class="overview-icons">
+          </div>
+         <p class="po-text">1.80 ACRES VILLA GATED COMMUNITY</p>
+       </div>
+ 
+       <!-- Item 3 -->
+       <div class="po-item">
+          <div class="po-icon">
+            <img src="./Icons/Overview/luxury.svg" alt="" class="overview-icons">
+          </div>
+         <p class="po-text">21 LUXURY INDEPENDENT VILLAS</p>
+       </div>
+ 
+       <!-- Item 4 -->
+       <div class="po-item">
+          <div class="po-icon">
+            <img src="./Icons/Overview/open-space.svg" alt="" class="overview-icons">
+          </div>
+         <p class="po-text">70% OPEN SPACES</p>
+       </div>
+ 
+       <!-- Item 5 -->
+       <div class="po-item">
+          <div class="po-icon">
+            <img src="./Icons/Overview/area.svg" alt="" class="overview-icons">
+          </div>
+         <p class="po-text">6613 SQ FT BUILT-UP AREA</p>
+       </div>
+ 
+       <!-- Item 6 -->
+       <div class="po-item">
+          <div class="po-icon">
+            <img src="./Icons/Overview/villa (1).svg" alt="" class="overview-icons">
+          </div>
+         <p class="po-text">4 BHK TRIPLEX VILLAS</p>
+       </div>
+
+       <div class="po-item">
+          <div class="po-icon">
+            <img src="./Icons/Overview/villa (1).svg" alt="" class="overview-icons">
+          </div>
+         <p class="po-text">PLOT SIZE - 2000 SQFT</p>
+       </div>
+     </div>
+   </div>
+</section>
+
+
+
    <section class="py-4  bg-main lr-sec" id="philosophy">
       <div class="container-fluid px-0" bis_skin_checked="1">
 
@@ -982,19 +1148,21 @@
                   <h2 class="d-none">Managed Farmland near Bangalore</h2>
                   <h2 class="d-none">Farm Plots near Bangalore</h2>
                   <h2 class="d-none">Farmland near Bangalore</h2>
-                  <h2 class="heading pb-2"> PROJECT OVERVIEW</h2>
+                  <h2 class="heading pb-2"> Project Highlights</h2>
 
                   <!-- <p class="text-justify pf-siz">
                     IN THE COMFORT OF YOUR OWN HOME
                   </p> -->
                   <ul class="text-justify pf-siz">
-                     <li>BBMP & RERA APPROVED</li>
-                     <li>1.80 ACRES VILLA GATED COMMUNITY</li>
-                     <li>21 LUXURY INDEPENDENT VILLAS</li>
-                     <li>70% OPEN SPACES</li>
-                     <li>6613 SQ FT BUILT-UP AREA</li>
-                     <li>4 BHK TRIPLEX VILLAS</li>
-                     <li>PLOT SIZE - 2000 SQFT</li>                  
+                     <li><strong>Premium Configuration:</strong> 4 BHK, servant room, 3 living areas, 3 fully developed gardens, 3 sitting decks, 7 toilets & 2 car parks</li>
+                     <li><strong>Undivided Share of Land:</strong> 50% - 3747 sq. ft.</li>
+                     <li><strong>90% Efficiency:</strong> Carpet Area is 90% of Built-up Area</li>
+                     <li><strong>Home Automation:</strong> CAT 6C Wiring (Optional)</li>
+                     <li><strong>High Floor Height:</strong> 3.6 meters (11.8 feet)</li>
+                     <li><strong>Garden Kitchen:</strong> Garden kitchen with utility area</li>
+                     <li><strong>Staircase Design:</strong> ~1,000 sq. ft. marble used in steps, sleek appearance, no vibrations, rails with glass</li>
+                     <li><strong>Elevator:</strong> 4-passenger Sierra, imported machine-roomless elevator</li>
+                     <li><strong>No GST:</strong> No added GST</li>                
                   </ul>
 
                 
@@ -1021,21 +1189,13 @@
                <div class="px-3  banner-details pad-tb left--100  bg-white rou" bis_skin_checked="1">
                   <h2 class="heading pb-2">Project Highlights</h2>
                   <!-- <p> RIGHT IN THE CITY</p> -->
-                  <ul class="text-justify"> Built for a multitasking lifestyle, our units are
-                     <li><strong>Premium Configuration:</strong> 4 BHK, servant room, 3 living areas, 3 fully developed gardens, 3 sitting decks, 7 toilets & 2 car parks</li>
-                     <li><strong>Undivided Share of Land:</strong> 50% - 3747 sq. ft.</li>
-                     <li><strong>90% Efficiency:</strong> Carpet Area is 90% of Built-up Area</li>
-                     <li><strong>Home Automation:</strong> CAT 6C Wiring (Optional)</li>
-                     <li><strong>High Floor Height:</strong> 3.6 meters (11.8 feet)</li>
-                     <li><strong>Garden Kitchen:</strong> Garden kitchen with utility area</li>
-                     <li><strong>Staircase Design:</strong> ~1,000 sq. ft. marble used in steps, sleek appearance, no vibrations, rails with glass</li>
-                     <li><strong>Elevator:</strong> 4-passenger Sierra, imported machine-roomless elevator</li>
-                     <li><strong>No GST:</strong> No added GST</li>
-                     <li><strong>Rain Water Harvesting:</strong> Rainwater pits provided to enhance water table and recharge borewell water<
-                     <li><strong>Drip Irrigation:</strong> All terrace flower troughs have drip irrigation with preset drops per minute<
-                     <li><strong>Power Efficient Homes:</strong> 10kV power requirement per unit, 100% backup with auto switch in 30 seconds<
-                     <li><strong>Pneumatic Water System:</strong> No overhead tank, consistent pressure, treated potable tap water<
-                     <li><strong>Heat Pumps:</strong> Solar heat pumps replace geysers in all toilets, saving power<
+                  <ul class="text-justify"> 
+                     
+                     <li><strong>Rain Water Harvesting:</strong> Rainwater pits provided to enhance water table and recharge borewell water</li>
+                     <li><strong>Drip Irrigation:</strong> All terrace flower troughs have drip irrigation with preset drops per minute</li>
+                     <li><strong>Power Efficient Homes:</strong> 10kV power requirement per unit, 100% backup with auto switch in 30 seconds/li><
+                     <li><strong>Pneumatic Water System:</strong> No overhead tank, consistent pressure, treated potable tap water</li>
+                     <li><strong>Heat Pumps:</strong> Solar heat pumps replace geysers in all toilets, saving power</li>
                      <li><strong>Sewage Treatment Plant:</strong> Treated water used for flush tanks and landscaping</li>
                   </ul>
                </div>
