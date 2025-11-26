@@ -227,6 +227,273 @@
 }
 
 
+.specifications-section-unique {
+            padding: 0px 20px 60px 20px;
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .spec-section-title {
+            text-align: center;
+            font-size: 48px;
+            font-weight: 300;
+            letter-spacing: 8px;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            color: #1a1a1a;
+        }
+
+        .spec-slider-container {
+            position: relative;
+            padding: 0 60px;
+        }
+
+        .spec-slider-wrapper {
+            overflow: hidden;
+        }
+
+        .spec-slider-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            gap: 30px;
+        }
+
+        .spec-unique-card {
+            min-width: calc(33.333% - 20px);
+            background: #FAF3EF;
+            border-radius: 20px;
+            padding: 40px 30px;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            /* height: 520px; */
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        .spec-unique-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(74, 144, 226, 0.4);
+            box-shadow: 0 10px 40px rgba(74, 144, 226, 0.15);
+        }
+
+        .spec-card-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #000 0%, #000 100%);
+            border-radius: 50%;
+            font-size: 40px;
+        }
+
+        .spec-card-title {
+            text-align: center;
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+            color: #1a1a1a;
+        }
+
+        .spec-card-content {
+            flex: 1;
+            overflow-y: auto;
+            padding-right: 10px;
+        }
+
+        .spec-card-content::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .spec-card-content::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+        }
+
+        .spec-card-content::-webkit-scrollbar-thumb {
+            background: rgba(74, 144, 226, 0.5);
+            border-radius: 10px;
+        }
+
+        .spec-unique-item {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 5px;
+            font-size: 10px;
+            line-height: 1.6;
+            color: #333333;
+        }
+
+        .spec-unique-bullet {
+            color: #000;
+            font-weight: bold;
+            min-width: 8px;
+            border-radius: 50%;
+        }
+
+        .spec-unique-label {
+            font-weight: 600;
+            color: #000;
+        }
+
+        .spec-slider-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            /* background: rgba(74, 144, 226, 0.9); */
+            background: #000;
+            border: none;
+            border-radius: 50%;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .spec-slider-btn:hover {
+            background: #000;
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .spec-slider-btn.spec-prev {
+            left: 0;
+        }
+
+        .spec-slider-btn.spec-next {
+            right: 0;
+        }
+
+        .spec-slider-dots {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 40px;
+        }
+
+        .spec-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .spec-dot.spec-active {
+            background: #000;
+            width: 20px;
+            border-radius: 6px;
+        }
+
+        @media (max-width: 1024px) {
+            .spec-unique-card {
+                min-width: calc(50% - 15px);
+                height: 500px;
+            }
+
+            .spec-section-title {
+                font-size: 36px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .specifications-section-unique {
+                padding: 60px 15px;
+            }
+
+            .spec-section-title {
+                font-size: 32px;
+                letter-spacing: 4px;
+                margin-bottom: 40px;
+            }
+
+            .spec-slider-container {
+                padding: 0 50px;
+            }
+
+            .spec-unique-card {
+                min-width: 100%;
+                height: 480px;
+                padding: 30px 25px;
+            }
+
+            .spec-slider-track {
+                /* gap: 20px; */
+            }
+
+            .spec-slider-btn {
+                width: 40px;
+                height: 40px;
+                font-size: 18px;
+            }
+
+            .spec-card-title {
+                font-size: 18px;
+            }
+
+            .spec-unique-item {
+                font-size: 13px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .specifications-section-unique {
+                padding: 40px 10px;
+            }
+
+            .spec-section-title {
+                font-size: 24px;
+                letter-spacing: 2px;
+            }
+
+            .spec-slider-container {
+                padding: 0 40px;
+            }
+
+            .spec-unique-card {
+                height: 350px;
+                padding: 25px 20px;
+            }
+
+            .spec-card-icon {
+                width: 60px;
+                height: 60px;
+                font-size: 30px;
+            }
+
+            .spec-card-title {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+
+            .spec-slider-btn {
+                width: 35px;
+                height: 35px;
+                font-size: 16px;
+            }
+        }
+
+
+        .center-sub-text{
+         width: 100%;
+         text-align: center;
+         padding: 0 15rem;
+         margin-bottom: 5rem;
+        }
+        .center-sub-text p{
+         /* max-width: 80%; */
+        }
+
+
    </style>
 <script bis_use="true" type="text/javascript" charset="utf-8" data-bis-config="[&quot;facebook.com/&quot;,&quot;twitter.com/&quot;,&quot;youtube-nocookie.com/embed/&quot;,&quot;//vk.com/&quot;,&quot;//www.vk.com/&quot;,&quot;linkedin.com/&quot;,&quot;//www.linkedin.com/&quot;,&quot;//instagram.com/&quot;,&quot;//www.instagram.com/&quot;,&quot;//www.google.com/recaptcha/api2/&quot;,&quot;//hangouts.google.com/webchat/&quot;,&quot;//www.google.com/calendar/&quot;,&quot;//www.google.com/maps/embed&quot;,&quot;spotify.com/&quot;,&quot;soundcloud.com/&quot;,&quot;//player.vimeo.com/&quot;,&quot;//disqus.com/&quot;,&quot;//tgwidget.com/&quot;,&quot;//js.driftt.com/&quot;,&quot;friends2follow.com&quot;,&quot;/widget&quot;,&quot;login&quot;,&quot;//video.bigmir.net/&quot;,&quot;blogger.com&quot;,&quot;//smartlock.google.com/&quot;,&quot;//keep.google.com/&quot;,&quot;/web.tolstoycomments.com/&quot;,&quot;moz-extension://&quot;,&quot;chrome-extension://&quot;,&quot;/auth/&quot;,&quot;//analytics.google.com/&quot;,&quot;adclarity.com&quot;,&quot;paddle.com/checkout&quot;,&quot;hcaptcha.com&quot;,&quot;recaptcha.net&quot;,&quot;2captcha.com&quot;,&quot;accounts.google.com&quot;,&quot;www.google.com/shopping/customerreviews&quot;,&quot;buy.tinypass.com&quot;,&quot;gstatic.com&quot;,&quot;secureir.ebaystatic.com&quot;,&quot;docs.google.com&quot;,&quot;contacts.google.com&quot;,&quot;github.com&quot;,&quot;mail.google.com&quot;,&quot;chat.google.com&quot;,&quot;audio.xpleer.com&quot;,&quot;keepa.com&quot;,&quot;static.xx.fbcdn.net&quot;,&quot;sas.selleramp.com&quot;,&quot;1plus1.video&quot;,&quot;console.googletagservices.com&quot;,&quot;//lnkd.demdex.net/&quot;,&quot;//radar.cedexis.com/&quot;,&quot;//li.protechts.net/&quot;,&quot;challenges.cloudflare.com/&quot;,&quot;ogs.google.com&quot;]" src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/traffic.js"></script></head>
 
@@ -293,8 +560,8 @@
                   <div class="carousel-caption d-none d-md-block">
                      <h5>Live miles away from the concrete jungle.</h5> -->
                      <picture>
-                        <source media="(min-width:768px)" srcset="images/banner1.webp" class="w-100" height="584" width="1350">
-                        <source media="(max-width:768px)" class="w-100" srcset="images/mbanner1.webp" height="584" width="412">
+                        <source media="(min-width:768px)" srcset="./banner1.webp" class="w-100" height="584" width="1350">
+                        <source media="(max-width:768px)" class="w-100" srcset="./banner1.webp" height="584" width="412">
                         <img src="./banner1.webp" class="w-100" alt="" title="">
                      </picture>
 
@@ -303,8 +570,8 @@
                   <div class="carousel-item active" data-bs-interval="5000" bis_skin_checked="1">
 
                      <picture>
-                        <source media="(min-width:768px)" srcset="images/banner2.webp" class="w-100" height="584" width="1350">
-                        <source media="(max-width:768px)" class="w-100" srcset="images/mbanner2.webp" height="584" width="412">
+                        <source media="(min-width:768px)" srcset="./banner2.webp" class="w-100" height="584" width="1350">
+                        <source media="(max-width:768px)" class="w-100" srcset="./banner2.webp" height="584" width="412">
                         <img src="./banner2.webp" class="w-100" alt="" title="">
                      </picture>
                   </div>
@@ -338,22 +605,20 @@
                   <h2 class="d-none">Managed Farmland near Bangalore</h2>
                   <h2 class="d-none">Farm Plots near Bangalore</h2>
                   <h2 class="d-none">Farmland near Bangalore</h2>
-                  <h2 class="heading pb-2"> Tune into Nature</h2>
+                  <h2 class="heading pb-2"> PROJECT OVERVIEW</h2>
 
-                  <p class="text-justify pf-siz">
+                  <!-- <p class="text-justify pf-siz">
                     IN THE COMFORT OF YOUR OWN HOME
-                  </p>
-                  <p class="text-justify pf-siz">
-                     Tucked away from the hustle and bustle
-                     of the city, you are immediately acquainted 
-                     with a sense of tranquillity and gentle winds 
-                     on arriving at Cedar String. 
-                     From the moment you walk-in, you are treated 
-                     to a highly evolved landscape design with foliage 
-                     laid out to you in pristine courtyard format. 
-                     In fact, green lung areas occupy 70% of the 
-                     overall project footprint.                  
-                  </p>
+                  </p> -->
+                  <ul class="text-justify pf-siz">
+                     <li>BBMP & RERA APPROVED</li>
+                     <li>1.80 ACRES VILLA GATED COMMUNITY</li>
+                     <li>21 LUXURY INDEPENDENT VILLAS</li>
+                     <li>70% OPEN SPACES</li>
+                     <li>6613 SQ FT BUILT-UP AREA</li>
+                     <li>4 BHK TRIPLEX VILLAS</li>
+                     <li>PLOT SIZE - 2000 SQFT</li>                  
+                  </ul>
 
                 
                </div>
@@ -377,16 +642,25 @@
             <div class="col-md-5 col-12 bg-white  order-sm-2 order-first " bis_skin_checked="1">
 
                <div class="px-3  banner-details pad-tb left--100  bg-white rou" bis_skin_checked="1">
-                  <h2 class="heading pb-2"> A Personal Retreat</h2>
-                  <p> RIGHT IN THE CITY</p>
-                  <p class="text-justify"> Built for a multitasking lifestyle, our units are
-                     truly functional where every square foot serves 
-                     a meaningful purpose. <br>
-                     Your dwelling unit stretches out to reveal a 
-                     sun-soaked interior, landscaped living room 
-                     accommodating the finest in modular kitchen
-                     appliances to compliment your culinary skills             
-                  </p>
+                  <h2 class="heading pb-2">Project Highlights</h2>
+                  <!-- <p> RIGHT IN THE CITY</p> -->
+                  <ul class="text-justify"> Built for a multitasking lifestyle, our units are
+                     <li><strong>Premium Configuration:</strong> 4 BHK, servant room, 3 living areas, 3 fully developed gardens, 3 sitting decks, 7 toilets & 2 car parks</li>
+                     <li><strong>Undivided Share of Land:</strong> 50% - 3747 sq. ft.</li>
+                     <li><strong>90% Efficiency:</strong> Carpet Area is 90% of Built-up Area</li>
+                     <li><strong>Home Automation:</strong> CAT 6C Wiring (Optional)</li>
+                     <li><strong>High Floor Height:</strong> 3.6 meters (11.8 feet)</li>
+                     <li><strong>Garden Kitchen:</strong> Garden kitchen with utility area</li>
+                     <li><strong>Staircase Design:</strong> ~1,000 sq. ft. marble used in steps, sleek appearance, no vibrations, rails with glass</li>
+                     <li><strong>Elevator:</strong> 4-passenger Sierra, imported machine-roomless elevator</li>
+                     <li><strong>No GST:</strong> No added GST</li>
+                     <li><strong>Rain Water Harvesting:</strong> Rainwater pits provided to enhance water table and recharge borewell water<
+                     <li><strong>Drip Irrigation:</strong> All terrace flower troughs have drip irrigation with preset drops per minute<
+                     <li><strong>Power Efficient Homes:</strong> 10kV power requirement per unit, 100% backup with auto switch in 30 seconds<
+                     <li><strong>Pneumatic Water System:</strong> No overhead tank, consistent pressure, treated potable tap water<
+                     <li><strong>Heat Pumps:</strong> Solar heat pumps replace geysers in all toilets, saving power<
+                     <li><strong>Sewage Treatment Plant:</strong> Treated water used for flush tanks and landscaping</li>
+                  </ul>
                </div>
             </div>
 
@@ -402,15 +676,11 @@
          <div class=" row   d-flex align-items-center g-0 pt-md-4" bis_skin_checked="1">
             <div class="col-md-5 col-12 bg-white" bis_skin_checked="1">
                <div class="px-3 pad-tb banner-details  left-100 bg-white round-left" bis_skin_checked="1">
-                  <h2 class="heading pb-2">Wake up to bird songs</h2>
-                  <p>INSTEAD OF BLARING SIRENS</p>
+                  <h2 class="heading pb-2">TUNE INTO NATURE</h2>
+                  <p>IN THE COMFORT OF YOUR OWN HOME</p>
                   <p class="text-justify">  As you make your way to the first level, 
-                     we reveal your master bedroom
-                     that is accented by luxe finishes and 
-                     materials for an inspired living.
-                     With capacious carpet area at your disposal, 
-                     the central story here is one of openness 
-                     and togetherness            
+                     Tucked away from the hustle and bustle of the city, you are immediately acquainted with a sense of tranquillity and gentle winds on arriving at Cedar String. From the moment you walk in, you are treated to a highly evolved landscape design with foliage laid out for you in pristine courtyard format. In fact, green lung areas occupy 70% of the overall project footprint.
+          
                   </p>
 
                </div>
@@ -456,7 +726,7 @@
    <section class="pt-3 3 pb-4  bg-main" id="design">
       <div class="container-fluid " bis_skin_checked="1">
          <div class="row" bis_skin_checked="1">
-            <h2 class="heading text-dark text-center"> Design</h2>
+            <h2 class="heading text-dark text-center"> LIFE AT CEDAR STRING</h2>
          </div>
          <div class=" row  py-3 d-flex align-items-center justify-content-center px-md-5 " bis_skin_checked="1">
 
@@ -465,8 +735,8 @@
                <div class="ins-sec px-2 px-md-3 " bis_skin_checked="1">
                   <img class="lazy img-fluid rounded-bottom rounded-5 entered exited" width="362px" height="198px" src="./Designed-aroun.webp">
                   <div class="details  bg-white p-3" bis_skin_checked="1">
-                     <h4 class="text-dark text-mobile fw-lighter pb-3 text-center">Designed around nature for you.</h4>
-                     <p class="text-justify">At Avillion Farms, the idea was to preserve most of the trees. The presence of nature was so strong that the outdoors and indoors integrated so effortlessly. All rooms open out to vast landscapes and greenery, with a deck that fades into the vastness. <br>Nature is brought into the farmhouses by way of green gazebos and gardens. Own your piece of calmness that's carefully wrapped with tranquility and many contemporary amenities. Experience the innate beauty of nature with
+                     <h4 class="text-dark text-mobile fw-lighter pb-3 text-center">RIGHT IN THE CITY</h4>
+                     <p class="text-justify">Built for a multitasking lifestyle, our units are truly functional, where every square foot serves a meaningful purpose. Your dwelling unit stretches out to reveal a sun-soaked interior, a landscaped living room accommodating the finest in modular kitchen appliances to complement your culinary skills.
                      </p>
                   </div>
                </div>
@@ -476,9 +746,10 @@
                <div class="ins-sec px-2 px-md-3" bis_skin_checked="1">
 
                   <div class="details  bg-white p-3" bis_skin_checked="1">
-                     <h4 class="text-dark text-mobile fw-lighter pb-3 text-center">Limitless nature, <br> unlimited privacy.
+                     <h4 class="text-dark text-mobile fw-lighter pb-3 text-center">INSTEAD OF BLARING SIRENS
                      </h4>
-                     <p class="text-justify">Wake up to your second life at Avillion Farms.<br>These private farmhouses at Avillion Farms are an ode to rest and relaxation. Designed to be one with nature, each of the farmhouses is enclosed within its own green compound, providing uncompromised privacy. All spaces within have intrinsic detailing, catering to one’s utilities and personal style of living.</p>
+                     <p class="text-justify">As you make your way to the first level, we reveal your master bedroom that is accented by luxe finishes and materials for an inspired living. With a capacious carpet area at your disposal, the central story here is one of openness and togetherness.
+                     </p>
                   </div>
                   <img src="./Limitless-nature.webp" class="img-fluid  rounded-top rounded-5" width="362px" height="198px">
                </div>
@@ -488,9 +759,10 @@
                <div class="ins-sec px-2 px-md-3" bis_skin_checked="1">
                   <img src="./Limitless-nature.webp" class="img-fluid  rounded-bottom rounded-5" width="362px" height="198px">
                   <div class="details  bg-white p-3" bis_skin_checked="1">
-                     <h4 class="text-dark text-mobile  fw-lighter pb-3 text-center">Blend in to feel the exquisiteness.
+                     <h4 class="text-dark text-mobile  fw-lighter pb-3 text-center">Let Nature Sing to You
                      </h4>
-                     <p class="text-justify"> A magical yet close to nature experience, blended with world class architecture and landscaping, makes Avillion Farms the latest vision for ‘Second Living’. Escape to a world of pure luxury and aesthetic elegance at our stunning Farmhouse at Avillion Farms. Every corner exudes sophistication and style with exquisite detail and premium finishes, creating an ambiance of refined opulence. From rich textures to unique accents, every element at Avillion Farms is carefully chosen to create a space that is both beautiful and functional.</p>
+                     <p class="text-justify"> From the moment you walk in, you are treated to a highly evolved landscape design, with foliage laid out in a pristine courtyard format. In fact, green lung areas occupy 70% of the overall project footprint.
+                     </p>
                   </div>
                </div>
             </div>
@@ -499,9 +771,9 @@
                <div class="ins-sec px-2 px-md-3" bis_skin_checked="1">
                   <img src="./Blend-in-to-feel-the-exquisiteness.webp" class="img-fluid rounded-bottom rounded-5" width="362px" height="198px">
                   <div class="details  bg-white p-3" bis_skin_checked="1">
-                     <h4 class="text-dark text-mobile  fw-lighter pb-3 text-center">Blend in to feel the exquisiteness.
+                     <h4 class="text-dark text-mobile  fw-lighter pb-3 text-center">Let Nature Sing to You
                      </h4>
-                     <p class="text-justify">A magical yet close to nature experience, blended with world-class architecture and landscaping, makes Avillion Farms the latest vision for ‘Second Living'. Escape to a world of pure luxury and aesthetic elegance at our stunning farmhouse at Avillion Farms. Every corner exudes sophistication and style with exquisite detail and premium finishes, creating an ambiance of refined opulence. From rich textures to unique accents, every element at Avillion Farms is carefully chosen to create a space that is both beautiful and functional.</p>
+                     <p class="text-justify">From the moment you walk in, you are treated to a highly evolved landscape design, with foliage laid out in a pristine courtyard format. In fact, green lung areas occupy 70% of the overall project footprint.</p>
                   </div>
                </div>
             </div>
@@ -517,15 +789,15 @@
          <div class="row py-3" bis_skin_checked="1">
             <div class="col-md-3 col-6 text-center" bis_skin_checked="1">
                <img src="./Villa.png" alt="Villa" class="w-25 pb-2" width="66px" height="75px" loading="lazy">
-               <h3 class="elementor-image-box-title">Farm House</h3>
+               <h3 class="elementor-image-box-title">Water Softener Plant</h3>
             </div>
             <div class="col-md-3 col-6 text-center" bis_skin_checked="1">
                <img src="./Gazebo.png" alt="Villa" class="w-25 pb-2" width="66px" height="75px" loading="lazy">
-               <h3 class="elementor-image-box-title">Gazebo</h3>
+               <h3 class="elementor-image-box-title">Rain Water Harvesting</h3>
             </div>
             <div class="col-md-3 col-6 text-center" bis_skin_checked="1">
                <img src="./High-Ceiling.png" alt="Villa" class="w-25 pb-2" width="66px" height="75px" loading="lazy">
-               <h3 class="elementor-image-box-title">High Ceiling</h3>
+               <h3 class="elementor-image-box-title">24X7 Securityg</h3>
             </div>
             <div class="col-md-3 col-6 text-center" bis_skin_checked="1">
                <img src="./Vastu-Compliant.png" alt="Villa" class="w-25 pb-2" width="66px" height="75px" loading="lazy">
@@ -543,32 +815,32 @@
             </div>
             <div class="col-md-3 col-6 text-center" bis_skin_checked="1">
                <img src="./Lawn-Space.png" alt="Villa" class="w-25 pb-2" width="66px" height="75px" loading="lazy">
-               <h3 class="elementor-image-box-title">Lawn Space</h3>
+               <h3 class="elementor-image-box-title">Gymnasium</h3>
             </div>
             <div class="col-md-3 col-6 text-center" bis_skin_checked="1">
                <img src="./Jacuzzi.png" alt="Villa" class="w-25 pb-2" width="66px" height="75px" loading="lazy">
-               <h3 class="elementor-image-box-title">Jacuzzi</h3>
+               <h3 class="elementor-image-box-title">Power Back-up</h3>
             </div>
          </div>
          <div class="row pb-3" bis_skin_checked="1">
             <div class="col-md-3 col-6 text-center" bis_skin_checked="1">
                <img src="./Pathways.png" alt="Villa" class="w-25 pb-2" width="66px" height="75px" loading="lazy">
-               <h3 class="elementor-image-box-title">Pathways &amp; Roads</h3>
+               <h3 class="elementor-image-box-title">Heat Pump System</h3>
             </div>
             <div class="col-md-3 col-6 text-center" bis_skin_checked="1">
                <img src="./Compound-Fencing.png" alt="Villa" class="w-25 pb-2" width="66px" height="75px" loading="lazy">
-               <h3 class="elementor-image-box-title">Compound &amp; Fencing</h3>
+               <h3 class="elementor-image-box-title">Sewage Treatment  Plant</h3>
             </div>
-            <div class="col-md-3 col-6 text-center" bis_skin_checked="1">
+            <!-- <div class="col-md-3 col-6 text-center" bis_skin_checked="1">
                <img src="./Civil-Work.png" alt="Villa" class="w-25 pb-2" width="66px" height="75px" loading="lazy">
                <h3 class="elementor-image-box-title">Civil Work</h3>
             </div>
             <div class="col-md-3 col-6 text-center" bis_skin_checked="1">
                <img src="./Outdoor-Bar-Deck.png" alt="Villa" class="w-25 pb-2" width="66px" height="75px" loading="lazy">
                <h3 class="elementor-image-box-title">Outdoor Bar Deck</h3>
-            </div>
+            </div> -->
          </div>
-         <div class="row pb-3" bis_skin_checked="1">
+         <!-- <div class="row pb-3" bis_skin_checked="1">
             <div class="col-md-3 col-6 text-center d-none" bis_skin_checked="1">
                <img src="./steamroom.svg" alt="Villa" class="w-25 pb-2" width="66px" height="75px" loading="lazy">
                <h3 class="elementor-image-box-title">Steam &amp; Sauna Rooms</h3>
@@ -586,10 +858,320 @@
                <h3 class="elementor-image-box-title">Private Pool with
                   multiple decks &amp; gardens</h3>
             </div>
-         </div>
+         </div> -->
       </div>
       
    </section>
+
+
+   <section class="specifications-section-unique">
+      <h2 class="heading pb-2 text-center">SPECIFICATION</h2>
+
+      <div class="spec-slider-container">
+          <button class="spec-slider-btn spec-prev" onclick="specSliderMove(-1)">&#10094;</button>
+          
+          <div class="spec-slider-wrapper">
+              <div class="spec-slider-track" id="specSliderTrack">
+
+                  <!-- Card 1: Structure -->
+                  <div class="spec-unique-card">
+                      <div class="spec-card-icon">🏗️</div>
+                      <h3 class="spec-card-title">STRUCTURE</h3>
+                      <div class="spec-card-content">
+                          
+                          <div class="spec-unique-item">
+                              <span class="spec-unique-bullet">■</span>
+                              <span><span class="spec-unique-label">Structure:</span> RCC Framed structure with Masonry Partitions</span>
+                          </div>
+
+                          <div class="spec-unique-item">
+                              <span class="spec-unique-bullet">■</span>
+                              <span><span class="spec-unique-label">Floor-to-Floor Height:</span> 3.6m (11’ 8”)</span>
+                          </div>
+
+                          <div class="spec-unique-item">
+                              <span class="spec-unique-bullet">■</span>
+                              <span><span class="spec-unique-label">Internal Walls:</span> Solid concrete blocks with finished plaster</span>
+                          </div>
+
+                          <div class="spec-unique-item">
+                              <span class="spec-unique-bullet">■</span>
+                              <span><span class="spec-unique-label">External Walls:</span> Solid concrete blocks with finished plaster</span>
+                          </div>
+
+                      </div>
+                  </div>
+
+                  <!-- Card 2: Flooring -->
+                  <div class="spec-unique-card">
+                      <div class="spec-card-icon">🔲</div>
+                      <h3 class="spec-card-title">FLOORING</h3>
+                      <div class="spec-card-content">
+
+                          <div class="spec-unique-item">
+                              <span class="spec-unique-bullet">■</span>
+                              <span><span class="spec-unique-label">Foyer:</span> Marble</span>
+                          </div>
+
+                          <div class="spec-unique-item">
+                              <span class="spec-unique-bullet">■</span>
+                              <span><span class="spec-unique-label">Guest Bedroom:</span> Laminated Wood</span>
+                          </div>
+
+                          <div class="spec-unique-item">
+                              <span class="spec-unique-bullet">■</span>
+                              <span><span class="spec-unique-label">Living & Dining:</span> Imported marble</span>
+                          </div>
+
+                          <div class="spec-unique-item">
+                              <span class="spec-unique-bullet">■</span>
+                              <span><span class="spec-unique-label">Central Courtyard:</span> Turf / Lily Pond</span>
+                          </div>
+
+                          <div class="spec-unique-item">
+                              <span class="spec-unique-bullet">■</span>
+                              <span><span class="spec-unique-label">Kitchen:</span> Marble</span>
+                          </div>
+
+                          <div class="spec-unique-item">
+                              <span class="spec-unique-bullet">■</span>
+                              <span><span class="spec-unique-label">Utility:</span> Anti-skid vitrified tiles</span>
+                          </div>
+
+                          <div class="spec-unique-item">
+                              <span class="spec-unique-bullet">■</span>
+                              <span><span class="spec-unique-label">Patio:</span> Marble</span>
+                          </div>
+
+                      </div>
+                  </div>
+
+                  <!-- Card 3: More Flooring -->
+                  <div class="spec-unique-card">
+                      <div class="spec-card-icon">🛋️</div>
+                      <h3 class="spec-card-title">ADDITIONAL FLOORING</h3>
+                      <div class="spec-card-content">
+
+                          <div class="spec-unique-item">
+                              <span class="spec-unique-bullet">■</span>
+                              <span><span class="spec-unique-label">Washrooms:</span> Marble</span>
+                          </div>
+
+                          <div class="spec-unique-item">
+                              <span class="spec-unique-bullet">■</span>
+                              <span><span class="spec-unique-label">Master Bedroom:</span> Laminated Wood</span>
+                          </div>
+
+                          <div class="spec-unique-item">
+                              <span class="spec-unique-bullet">■</span>
+                              <span><span class="spec-unique-label">Family Lounge:</span> Marble</span>
+                          </div>
+
+                          <div class="spec-unique-item">
+                              <span class="spec-unique-bullet">■</span>
+                              <span><span class="spec-unique-label">Bedroom 02:</span> Laminated Wood</span>
+                          </div>
+
+                          <div class="spec-unique-item">
+                              <span class="spec-unique-bullet">■</span>
+                              <span><span class="spec-unique-label">Bedroom 03:</span> Laminated Wood</span>
+                          </div>
+
+                      </div>
+                  </div>
+
+                  <!-- Card 4: Balconies & Utility Rooms -->
+                  <div class="spec-unique-card">
+                      <div class="spec-card-icon">🚪</div>
+                      <h3 class="spec-card-title">BALCONIES & UTILITY</h3>
+                      <div class="spec-card-content">
+
+                          <div class="spec-unique-item">
+                              <span class="spec-unique-bullet">■</span>
+                              <span><span class="spec-unique-label">Balconies:</span> Anti-skid vitrified tiles</span>
+                          </div>
+
+                          <div class="spec-unique-item">
+                              <span class="spec-unique-bullet">■</span>
+                              <span><span class="spec-unique-label">Maid’s Room:</span> Marble</span>
+                          </div>
+
+                          <div class="spec-unique-item">
+                              <span class="spec-unique-bullet">■</span>
+                              <span><span class="spec-unique-label">Maid’s Washroom:</span> Anti-skid ceramic tiles</span>
+                          </div>
+
+                          <div class="spec-unique-item">
+                              <span class="spec-unique-bullet">■</span>
+                              <span><span class="spec-unique-label">Home Office:</span> Marble</span>
+                          </div>
+
+                          <div class="spec-unique-item">
+                              <span class="spec-unique-bullet">■</span>
+                              <span><span class="spec-unique-label">Car Parking:</span> Anti-skid vitrified tiles</span>
+                          </div>
+
+                      </div>
+                  </div>
+
+                  <!-- Card 5: Wall Cladding -->
+                  <div class="spec-unique-card">
+                      <div class="spec-card-icon">🎨</div>
+                      <h3 class="spec-card-title">WALL CLADDING & FINISHES</h3>
+                      <div class="spec-card-content">
+
+                          <div class="spec-unique-item">
+                              <span class="spec-unique-bullet">■</span>
+                              <span><span class="spec-unique-label">Washrooms:</span> Marble up to false ceiling</span>
+                          </div>
+
+                          <div class="spec-unique-item">
+                              <span class="spec-unique-bullet">■</span>
+                              <span><span class="spec-unique-label">Maid’s Washroom:</span> Glazed ceramic tiles</span>
+                          </div>
+
+                          <div class="spec-unique-item">
+                              <span class="spec-unique-bullet">■</span>
+                              <span><span class="spec-unique-label">Internal Walls:</span> Premium emulsion paint</span>
+                          </div>
+
+                          <div class="spec-unique-item">
+                              <span class="spec-unique-bullet">■</span>
+                              <span><span class="spec-unique-label">External Walls:</span> Superior weatherproof paint</span>
+                          </div>
+
+                      </div>
+                  </div>
+
+                  <!-- Card 6: Ceilings -->
+                  <div class="spec-unique-card">
+                      <div class="spec-card-icon">🏠</div>
+                      <h3 class="spec-card-title">CEILINGS</h3>
+                      <div class="spec-card-content">
+
+                          <div class="spec-unique-item">
+                              <span class="spec-unique-bullet">■</span>
+                              <span><span class="spec-unique-label">Ceiling:</span> Premium emulsion paint</span>
+                          </div>
+
+                          <div class="spec-unique-item">
+                              <span class="spec-unique-bullet">■</span>
+                              <span><span class="spec-unique-label">False Ceiling:</span> Gypsum board</span>
+                          </div>
+
+                          <div class="spec-unique-item">
+                              <span class="spec-unique-bullet">■</span>
+                              <span><span class="spec-unique-label">Washroom Ceiling:</span> Waterproof fibre board</span>
+                          </div>
+
+                      </div>
+                  </div>
+
+                  <!-- Card 7: Doors & Windows -->
+                  <div class="spec-unique-card">
+                      <div class="spec-card-icon">🚪</div>
+                      <h3 class="spec-card-title">TEAK WOOD DOORS & WINDOWS</h3>
+                      <div class="spec-card-content">
+
+                          <div class="spec-unique-item">
+                              <span class="spec-unique-bullet">■</span>
+                              <span><span class="spec-unique-label">Main Door Frame:</span> Teak wood frame</span>
+                          </div>
+
+                          <div class="spec-unique-item">
+                              <span class="spec-unique-bullet">■</span>
+                              <span><span class="spec-unique-label">Main Door Shutter:</span> Teak wood panel</span>
+                          </div>
+
+                          <div class="spec-unique-item">
+                              <span class="spec-unique-bullet">■</span>
+                              <span><span class="spec-unique-label">Internal Doors:</span> 9’ high panelled wood doors with architrave</span>
+                          </div>
+
+                          <div class="spec-unique-item">
+                              <span class="spec-unique-bullet">■</span>
+                              <span><span class="spec-unique-label">Windows:</span> Wood-grain sound-insulated UPVC frames & shutters</span>
+                          </div>
+
+                          <div class="spec-unique-item">
+                              <span class="spec-unique-bullet">■</span>
+                              <span><span class="spec-unique-label">Mosquito Mesh:</span> Provided</span>
+                          </div>
+
+                      </div>
+                  </div>
+
+                  <!-- Card 8: Door Accessories -->
+                  <div class="spec-unique-card">
+                      <div class="spec-card-icon">🔧</div>
+                      <h3 class="spec-card-title">DOOR ACCESSORIES</h3>
+                      <div class="spec-card-content">
+
+                          <div class="spec-unique-item">
+                              <span class="spec-unique-bullet">■</span>
+                              <span><span class="spec-unique-label">Grills:</span> Optional</span>
+                          </div>
+
+                          <div class="spec-unique-item">
+                              <span class="spec-unique-bullet">■</span>
+                              <span><span class="spec-unique-label">Door Knobs & Latches:</span> Brush finish stainless steel</span>
+                          </div>
+
+                      </div>
+                  </div>
+
+                  <!-- Card 9: Staircase -->
+                  <div class="spec-unique-card">
+                      <div class="spec-card-icon">🪜</div>
+                      <h3 class="spec-card-title">STAIRCASES & TERRACES</h3>
+                      <div class="spec-card-content">
+
+                          <div class="spec-unique-item">
+                              <span class="spec-unique-bullet">■</span>
+                              <span><span class="spec-unique-label">Flooring:</span> Marble</span>
+                          </div>
+
+                          <div class="spec-unique-item">
+                              <span class="spec-unique-bullet">■</span>
+                              <span><span class="spec-unique-label">Terrace Garden:</span> Mix of turf & anti-skid tiles</span>
+                          </div>
+
+                          <div class="spec-unique-item">
+                              <span class="spec-unique-bullet">■</span>
+                              <span><span class="spec-unique-label">Railing:</span> Toughened glass with teak wood railing</span>
+                          </div>
+
+                          <div class="spec-unique-item">
+                              <span class="spec-unique-bullet">■</span>
+                              <span><span class="spec-unique-label">Terrace Area:</span> Trellis & planter boxes</span>
+                          </div>
+
+                      </div>
+                  </div>
+
+                  <!-- Card 10: Floor Plans -->
+                  <div class="spec-unique-card">
+                      <div class="spec-card-icon">📐</div>
+                      <h3 class="spec-card-title">FLOOR PLANS</h3>
+                      <div class="spec-card-content">
+
+                          <div class="spec-unique-item">
+                              <span class="spec-unique-bullet">■</span>
+                              <span>Floor plans are thoughtfully planned to offer independent access to all levels of the unit, ensuring quick accessibility and privacy throughout the home.</span>
+                          </div>
+
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+
+          <button class="spec-slider-btn spec-next" onclick="specSliderMove(1)">&#10095;</button>
+      </div>
+
+      <div class="spec-slider-dots" id="specSliderDots"></div>
+      
+</section>
 
 
 
@@ -601,6 +1183,10 @@
          <div class="row" id="floorplan" bis_skin_checked="1">
             <h2 class="heading text-center">Floor Plan</h2>
          </div>
+         <div class="center-sub-text">
+            <p>Our floor plans are thoughtfully planned to offer independent access to all levels of the unit, thereby ensuring quick accessibility and privacy, anywhere at home.</p>
+         </div>
+
          <div class="row" bis_skin_checked="1">
             <div class="floor-plan d-block mx-auto" bis_skin_checked="1">
                <ul class="nav nav-pills mb-3 justify-content-center " id="pills-tab" role="tablist">
@@ -800,6 +1386,21 @@
           <div class="location-panel-ctc">
             <div class="time-group-ctc first-group-ctc">
               <div class="time-header-ctc" onclick="toggleGroup(this)">
+                <span>Airport</span>
+                <span class="arrow-ctc">▼</span>
+              </div>
+              <div class="locations-list-ctc">
+                <div class="location-item-ctc">
+                  <span class="location-name-ctc"
+                    >Kempegowda International
+                    Airport,(Bangalore North)
+                    </span
+                  ><span class="location-time-ctc">24 K.M</span>
+                </div>
+              </div>
+            </div>
+            <div class="time-group-ctc">
+              <div class="time-header-ctc" onclick="toggleGroup(this)">
                 <span>Hospitals</span>
                 <span class="arrow-ctc">▼</span>
               </div>
@@ -818,16 +1419,72 @@
                   <span class="location-name-ctc">Bangalore Baptist Hospital </span
                   ><span class="location-time-ctc">10 K.M</span>
                 </div>
-                <!-- <div class="location-item-ctc">
-                  <span class="location-name-ctc">Kadugodi Metro Station</span
-                  ><span class="location-time-ctc">12 min</span>
-                </div>
-                <div class="location-item-ctc">
-                  <span class="location-name-ctc">Hope Farm Junction</span
-                  ><span class="location-time-ctc">12 min</span>
-                </div> -->
               </div>
             </div>
+
+            
+            <div class="time-group-ctc">
+               <div class="time-header-ctc" onclick="toggleGroup(this)">
+                 <span>Railway Station</span>
+                 <span class="arrow-ctc">▼</span>
+               </div>
+               <div class="locations-list-ctc">
+                 <div class="location-item-ctc">
+                   <span class="location-name-ctc"> City Central Railway Station(Center)</span
+                   ><span class="location-time-ctc">18 K.M</span>
+                 </div>
+                 <div class="location-item-ctc">
+                   <span class="location-name-ctc"
+                     >Yeshwantpur Railway Station
+                     (North-West) </span
+                   ><span class="location-time-ctc">17 K.M</span>
+                 </div>
+                 <div class="location-item-ctc">
+                   <span class="location-name-ctc">Bangalore Cantonment (North)</span
+                   ><span class="location-time-ctc">13 K.M</span>
+                 </div>  
+                 <div class="location-item-ctc">
+                   <span class="location-name-ctc">KR Puram Railway Station (North
+                      East) </span
+                   ><span class="location-time-ctc">15 K.M</span>
+                 </div>
+               </div>
+             </div>
+
+             
+            <div class="time-group-ctc">
+               <div class="time-header-ctc" onclick="toggleGroup(this)">
+                 <span>Land marks</span>
+                 <span class="arrow-ctc">▼</span>
+               </div>
+               <div class="locations-list-ctc">
+                 <div class="location-item-ctc">
+                   <span class="location-name-ctc"
+                     > Manyata Tech Park</span
+                   ><span class="location-time-ctc"> 3 K.M</span>
+                 </div>
+                 <div class="location-item-ctc">
+                   <span class="location-name-ctc"
+                     >Hebbal Flyover</span
+                   ><span class="location-time-ctc"> 6 K.M</span>
+                 </div>
+                 <div class="location-item-ctc">
+                   <span class="location-name-ctc"
+                     >Mekhri Circle</span
+                   ><span class="location-time-ctc"> 8 K.M</span>
+                 </div>
+                 <div class="location-item-ctc">
+                   <span class="location-name-ctc"
+                     >Windsor Manor</span
+                   ><span class="location-time-ctc"> 10 K.M</span>
+                 </div>
+                 <div class="location-item-ctc">
+                   <span class="location-name-ctc"
+                     >MG Road </span
+                   ><span class="location-time-ctc"> 12 K.M</span>
+                 </div>
+               </div>
+             </div>
 
             <div class="time-group-ctc">
               <div class="time-header-ctc" onclick="toggleGroup(this)">
@@ -867,78 +1524,22 @@
               </div>
             </div>
 
-            <div class="time-group-ctc">
-              <div class="time-header-ctc" onclick="toggleGroup(this)">
-                <span>Railway Station</span>
-                <span class="arrow-ctc">▼</span>
-              </div>
-              <div class="locations-list-ctc">
-                <div class="location-item-ctc">
-                  <span class="location-name-ctc"> City Central Railway Station(Center)</span
-                  ><span class="location-time-ctc">18 K.M</span>
-                </div>
-                <div class="location-item-ctc">
-                  <span class="location-name-ctc"
-                    >Yeshwantpur Railway Station
-                    (North-West) </span
-                  ><span class="location-time-ctc">17 K.M</span>
-                </div>
-                <div class="location-item-ctc">
-                  <span class="location-name-ctc">Bangalore Cantonment (North)</span
-                  ><span class="location-time-ctc">13 K.M</span>
-                </div>  
-                <div class="location-item-ctc">
-                  <span class="location-name-ctc">KR Puram Railway Station (North
-                     East) </span
-                  ><span class="location-time-ctc">15 K.M</span>
-                </div>
-              </div>
-            </div>
 
             <div class="time-group-ctc">
               <div class="time-header-ctc" onclick="toggleGroup(this)">
-                <span>Land marks</span>
+                <span>Projects Around</span>
                 <span class="arrow-ctc">▼</span>
               </div>
               <div class="locations-list-ctc">
                 <div class="location-item-ctc">
                   <span class="location-name-ctc"
-                    > Manyata Tech Park</span
-                  ><span class="location-time-ctc"> 3 K.M</span>
+                    > Shoba City</span
+                  ><span class="location-time-ctc"> 500 m</span>
                 </div>
                 <div class="location-item-ctc">
                   <span class="location-name-ctc"
-                    >Hebbal Flyover</span
-                  ><span class="location-time-ctc"> 6 K.M</span>
-                </div>
-                <div class="location-item-ctc">
-                  <span class="location-name-ctc"
-                    >Mekhri Circle</span
-                  ><span class="location-time-ctc"> 8 K.M</span>
-                </div>
-                <div class="location-item-ctc">
-                  <span class="location-name-ctc"
-                    >Windsor Manor</span
-                  ><span class="location-time-ctc"> 10 K.M</span>
-                </div>
-                <div class="location-item-ctc">
-                  <span class="location-name-ctc"
-                    >MG Road </span
-                  ><span class="location-time-ctc"> 12 K.M</span>
-                </div>
-              </div>
-            </div>
-            <div class="time-group-ctc">
-              <div class="time-header-ctc" onclick="toggleGroup(this)">
-                <span>Airport</span>
-                <span class="arrow-ctc">▼</span>
-              </div>
-              <div class="locations-list-ctc">
-                <div class="location-item-ctc">
-                  <span class="location-name-ctc"
-                    > Kempegowda International
-                    Airport,(Bangalore North) </span
-                  ><span class="location-time-ctc"> 24 K.M</span>
+                    > Bhartiya City</span
+                  ><span class="location-time-ctc"> 1 K.M</span>
                 </div>
               </div>
             </div>
@@ -996,6 +1597,16 @@
                      </div>
                      <div class="row pt-2">                        
                         <div class="col-12">
+                           <select name="looking" class="form-control border-bottom border-top-0 border-start-0 border-end-0 rounded-0">
+                              <option value="">Are you looking for a Luxury Farmhouse in Doddaballapura</option>
+                              <option value="Yes">Yes</option>
+                              <option value="No">No</option>
+                              
+                          </select>   
+                        </div>
+                     </div>
+                     <div class="row pt-2">                        
+                        <div class="col-12">
                            <select name="time" class="form-control border-bottom border-top-0 border-start-0 border-end-0 rounded-0">
                               <option value="">Best Time To Call</option>
                               <option value="9:30 AM To 01:00 PM">9:30 AM To 01:00 PM</option>
@@ -1048,15 +1659,13 @@
             <div class="col-md-3 col-12" bis_skin_checked="1">
                <div class="f-details" bis_skin_checked="1">
                   <h5 class="pb-3">CORPORATE OFFICE ADDRESS</h5>
-                  <p>6th Cross Road, 1371, 29th Main Rd,<br>
-                      Munivenkatappa Layout, BTM 2nd Stage,<br> Bengaluru,
-                     Karnataka 560076</p>
+                  <p></p>
                </div>
             </div>
             <div class="col-md-3 col-12" bis_skin_checked="1">
                <div class="f-details" bis_skin_checked="1">
                   <h5 class="pb-3">Site ADDRESS</h5>
-                  <p>Thondebhavi , Uchalagollahalli,<br> Gauribidanur Taluk,<br> Bengaluru- 561211</p>
+                  <p>3JJM+78C, Thanisandra Main Rd, North,<br>  Chokkanahalli, Bengaluru,<br> Karnataka 560064</p>
                </div>
             </div>
 
@@ -1070,11 +1679,13 @@
             <div class="col-md-3 col-12" bis_skin_checked="1">
                <div class="f-details" bis_skin_checked="1">
                   <h5 class="pb-3">Phone</h5>
-                  <p>+91 9900955444</p>
-                  <p>+91 9845054449</p>
+                  <p>+91 9740577106</p>
 
                </div>
             </div>
+
+            
+            <div class="sub-text" style="padding: 2rem 0;">RERA NO: RERA: 1250/304/PR/080525/007729</div>
 
          </div>
          <div class="row" bis_skin_checked="1">
@@ -1116,16 +1727,18 @@
             </div>
             <hr>
             <div class="col-md-12" bis_skin_checked="1">
-               <p>Disclaimer: Any content mentioned on this website is for information purposes only and prices are subject to change without notice. This website is just for the purpose of information only and not to be considered as an official website. Digital Partner <a href="https://www.imsolutions.co/" target="_blank"> IM Solutions</a></p>
-
+               <p>Disclaimer: Any content mentioned on this website is for information purposes only, and prices are subject to change without notice. This website is just for the purpose of information, and it’s an official website. Digital Partner<a href="https://www.pinakkaa.com/" target="_blank"> PINAKKAA</a></p>
             </div>
             <div class="text-center py-3" bis_skin_checked="1">
-               <a href="https://avillionfarms.com/privacy-policy/" class="text-center text-dark px-3">
+               <a href="#" class="text-center text-dark px-3">
                   Privacy Policy
                </a>
-               <a href="https://avillionfarms.com/terms-conditions/" class="px-3 text-center text-dark"> Terms Conditions</a>
+               <a href="#" class="px-3 text-center text-dark"> Terms Conditions</a>
             </div>
          </div>
+
+         
+         <div class="sub-text" style="padding: 1rem 0; text-align: center; width: 100%;">2025. All Rights Reserved</div>
 
       </div>
 
@@ -1156,7 +1769,11 @@
                         <input type="text" class="form-control mt-3 py-2" name="name" placeholder="Name" required>
                         <input type="email" class="form-control mt-3 py-2" name="email" placeholder="Email" required>
                         <input type="text" class="form-control mt-3 py-2" name="phone" placeholder="Phone" required>
-                        
+                        <select name="looking" class="form-control mt-3 py-2">
+                           <option value="">Are you looking for a Luxury Farmhouse in Doddaballapura</option>
+                           <option value="Yes">Yes</option>
+                           <option value="No">No</option>
+                        </select> 
                         <select name="time" class="form-control mt-3 py-2">
                            <option value="">Best Time To Call</option>
                            <option value="9:30 AM To 01:00 PM">9:30 AM To 01:00 PM</option>
@@ -1296,6 +1913,133 @@
     </script>
 
 
+
+<script>
+   // Unique namespace for specifications slider
+   const SpecSlider = (function() {
+       let specCurrentSlide = 0;
+       const specTrack = document.getElementById('specSliderTrack');
+       const specCards = document.querySelectorAll('.spec-unique-card');
+       const specDotsContainer = document.getElementById('specSliderDots');
+       let specAutoSlideInterval;
+       
+       let specCardsPerView = getSpecCardsPerView();
+       let specTotalSlides = Math.ceil(specCards.length / specCardsPerView);
+
+       function getSpecCardsPerView() {
+           if (window.innerWidth <= 768) return 1;
+           if (window.innerWidth <= 1024) return 2;
+           return 3;
+       }
+
+       function createSpecDots() {
+           specDotsContainer.innerHTML = '';
+           for (let i = 0; i < specTotalSlides; i++) {
+               const dot = document.createElement('div');
+               dot.className = 'spec-dot';
+               if (i === 0) dot.classList.add('spec-active');
+               dot.onclick = () => goToSpecSlide(i);
+               specDotsContainer.appendChild(dot);
+           }
+       }
+
+       function updateSpecDots() {
+           const dots = document.querySelectorAll('.spec-dot');
+           dots.forEach((dot, index) => {
+               dot.classList.toggle('spec-active', index === specCurrentSlide);
+           });
+       }
+
+       function moveSpecSlide(direction) {
+           specCurrentSlide += direction;
+           
+           if (specCurrentSlide < 0) specCurrentSlide = specTotalSlides - 1;
+           if (specCurrentSlide >= specTotalSlides) specCurrentSlide = 0;
+           
+           updateSpecSlider();
+           resetSpecAutoSlide();
+       }
+
+       function goToSpecSlide(index) {
+           specCurrentSlide = index;
+           updateSpecSlider();
+           resetSpecAutoSlide();
+       }
+
+       function updateSpecSlider() {
+           const cardWidth = specCards[0].offsetWidth;
+           const gap = 30;
+           const offset = -(specCurrentSlide * specCardsPerView * (cardWidth + gap));
+           specTrack.style.transform = `translateX(${offset}px)`;
+           updateSpecDots();
+       }
+
+       function startSpecAutoSlide() {
+           specAutoSlideInterval = setInterval(() => {
+               moveSpecSlide(1);
+           }, 4000); // Auto-slide every 4 seconds
+       }
+
+       function stopSpecAutoSlide() {
+           clearInterval(specAutoSlideInterval);
+       }
+
+       function resetSpecAutoSlide() {
+           stopSpecAutoSlide();
+           startSpecAutoSlide();
+       }
+
+       window.addEventListener('resize', () => {
+           const newCardsPerView = getSpecCardsPerView();
+           if (newCardsPerView !== specCardsPerView) {
+               specCardsPerView = newCardsPerView;
+               specTotalSlides = Math.ceil(specCards.length / specCardsPerView);
+               specCurrentSlide = 0;
+               createSpecDots();
+               updateSpecSlider();
+           }
+       });
+
+       // Touch events for mobile swipe
+       let specTouchStartX = 0;
+       let specTouchEndX = 0;
+
+       specTrack.addEventListener('touchstart', (e) => {
+           specTouchStartX = e.changedTouches[0].screenX;
+           stopSpecAutoSlide();
+       });
+
+       specTrack.addEventListener('touchend', (e) => {
+           specTouchEndX = e.changedTouches[0].screenX;
+           handleSpecSwipe();
+           startSpecAutoSlide();
+       });
+
+       function handleSpecSwipe() {
+           if (specTouchEndX < specTouchStartX - 50) moveSpecSlide(1);
+           if (specTouchEndX > specTouchStartX + 50) moveSpecSlide(-1);
+       }
+
+       // Pause auto-slide on hover (desktop)
+       const specSliderContainer = document.querySelector('.spec-slider-container');
+       specSliderContainer.addEventListener('mouseenter', stopSpecAutoSlide);
+       specSliderContainer.addEventListener('mouseleave', startSpecAutoSlide);
+
+       // Initialize
+       createSpecDots();
+       startSpecAutoSlide();
+
+       // Public API
+       return {
+           move: moveSpecSlide
+       };
+   })();
+
+   // Global function for button clicks
+   function specSliderMove(direction) {
+       SpecSlider.move(direction);
+   }
+</script>
 
 
    <script>
